@@ -1,5 +1,9 @@
+const URL = import.meta.env.PROD
+  ? "https://instagrambe.onrender.com"
+  : "http://localhost:5001";
+
 export const signupUser = async (username, email, password) => {
-  const response = await fetch("http://localhost:5001/users/signup", {
+  const response = await fetch(`${URL}/users/signup`, {
     method: "POST",
     mode: "cors",
     headers: {
@@ -18,7 +22,7 @@ export const signupUser = async (username, email, password) => {
 
 export const loginUser = async (username, password) => {
   console.log("Login user", username, password);
-  const response = await fetch("http://localhost:5001/users/login", {
+  const response = await fetch(`${URL}/users/login`, {
     method: "POST",
     mode: "cors",
     headers: {
