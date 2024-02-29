@@ -4,6 +4,9 @@ import LogOrSign from "./components/logOrSign/LogOrSign";
 
 import "./App.css";
 import Dashboard from "./components/dashboard/dashboard";
+const URL = import.meta.env.PROD
+  ? "https://instagrambe.onrender.com"
+  : "http://localhost:5001";
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
@@ -13,7 +16,7 @@ function App() {
     console.log("useeffect hit");
     async function fetchusers() {
       console.log("fetchusers");
-      const response = await fetch("http://localhost:5001/users/getAllUsers", {
+      const response = await fetch(`${URL}/users/getAllUsers`, {
         method: "GET",
         mode: "cors",
         headers: {
