@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #030303;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #077531;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(138, 0, 0, 0.1);
+}
+
+h1 {
+  font-family: "Pokemon Solid", sans-serif;
+  font-size: 24px;
+  color: #4fbe62;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #42f451;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff7675;
+}
+
+a {
+  color: #6342f4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

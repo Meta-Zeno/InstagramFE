@@ -1,0 +1,25 @@
+.images img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 40px;
+  background-color: #000000;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+.image-container {
+  margin: 100pxpx;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto);
+  gap: 50px;
+  justify-items: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+}
+
+p {
+  font-family: sans-serif;
+  font-size: 24px;
+  color: #ffffff;
+}
